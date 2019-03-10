@@ -1,0 +1,10 @@
+<!DOCTYPE HTML><HTML><HEAD><TITLE>Adobe Captivate Widget</TITLE><META NAME="generator" content="Adobe Captivate 6"></META><script type="text/javascript" src="../../assets/js/jquery-1.11.3.min.js"></script><script type="text/javascript" src="../../assets/js/OpenAjaxManagedHub-all.js"></script><script type="text/javascript">function init(){	hubClient = new OpenAjax.hub.IframeHubClient({HubClient: {onSecurityAlert: function() {}		   }	});	hubClient.connect(function() {		var id = hubClient.getClientID();		hubClient.publish(id+"_loaded","loaded");	});}function deInit() { if(hubClient) { 	hubClient.disconnect(); } } jQuery(document).ready(function() {	init();});</script></HEAD><BODY><script type="text/javascript" src="libs/easeljs-0.7.1.min.js"></script>
+      <script type="text/javascript" src="libs/tweenjs-0.5.1.min.js"></script>
+      <script type="text/javascript" src="libs/movieclip-0.7.1.min.js"></script>
+      <script type="text/javascript" src="libs/volumeControl.js"></script>
+      <body>
+      <div id="volumeControlDiv" style="position:absolute;left:0px; top:0px;" width="200" height="60">
+      <canvas id="volumeControlCanvas" style="position:absolute; left:0px; top:0px;"  width="200" height="60"></canvas>
+      <div id="volumeControlTxt" style="position:relative; display:block; top:32px" width="200" height="60"></div>
+      </div>
+      </body><script type="text/javascript" src="js/volumeControl_use.js"></script></BODY></HTML>
